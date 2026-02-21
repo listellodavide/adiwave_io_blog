@@ -1,0 +1,131 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+/* Catppuccin Latte (light) with Green accent */
+:root {
+  --background: #eff1f5;
+  --foreground: #4c4f69;
+  --card: #e6e9ef;
+  --card-foreground: #4c4f69;
+  --popover: #e6e9ef;
+  --popover-foreground: #4c4f69;
+  --primary: #40a02b;
+  --primary-foreground: #eff1f5;
+  --secondary: #ccd0da;
+  --secondary-foreground: #5c5f77;
+  --muted: #ccd0da;
+  --muted-foreground: #6c6f85;
+  --accent: #40a02b;
+  --accent-foreground: #eff1f5;
+  --destructive: #d20f39;
+  --destructive-foreground: #eff1f5;
+  --border: #bcc0cc;
+  --input: #bcc0cc;
+  --ring: #40a02b;
+  --chart-1: #40a02b;
+  --chart-2: #179299;
+  --chart-3: #1e66f5;
+  --chart-4: #df8e1d;
+  --chart-5: #8839ef;
+  --radius: 0.625rem;
+  --sidebar: #e6e9ef;
+  --sidebar-foreground: #4c4f69;
+  --sidebar-primary: #40a02b;
+  --sidebar-primary-foreground: #eff1f5;
+  --sidebar-accent: #ccd0da;
+  --sidebar-accent-foreground: #5c5f77;
+  --sidebar-border: #bcc0cc;
+  --sidebar-ring: #40a02b;
+}
+
+/* Catppuccin Macchiato (dark) with Green accent */
+.dark {
+  --background: #24273a;
+  --foreground: #cad3f5;
+  --card: #1e2030;
+  --card-foreground: #cad3f5;
+  --popover: #1e2030;
+  --popover-foreground: #cad3f5;
+  --primary: #a6da95;
+  --primary-foreground: #24273a;
+  --secondary: #363a4f;
+  --secondary-foreground: #b8c0e0;
+  --muted: #363a4f;
+  --muted-foreground: #a5adcb;
+  --accent: #a6da95;
+  --accent-foreground: #24273a;
+  --destructive: #ed8796;
+  --destructive-foreground: #24273a;
+  --border: #494d64;
+  --input: #494d64;
+  --ring: #a6da95;
+  --chart-1: #a6da95;
+  --chart-2: #8bd5ca;
+  --chart-3: #8aadf4;
+  --chart-4: #eed49f;
+  --chart-5: #c6a0f6;
+  --radius: 0.625rem;
+  --sidebar: #1e2030;
+  --sidebar-foreground: #cad3f5;
+  --sidebar-primary: #a6da95;
+  --sidebar-primary-foreground: #24273a;
+  --sidebar-accent: #363a4f;
+  --sidebar-accent-foreground: #b8c0e0;
+  --sidebar-border: #494d64;
+  --sidebar-ring: #a6da95;
+}
+
+@theme inline {
+  --font-sans: var(--font-dm-sans), 'DM Sans', system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), 'JetBrains Mono', monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  .inline-code {
+    @apply rounded bg-secondary px-1.5 py-0.5 font-mono text-xs text-foreground;
+  }
+}
