@@ -7,6 +7,7 @@ import { CategoryFilter } from "@/components/category-filter"
 import type { Metadata } from "next"
 
 const categoryMap: Record<string, string> = {
+  career: "Career",
   java: "Java",
   agile: "Agile",
   scrum: "Scrum",

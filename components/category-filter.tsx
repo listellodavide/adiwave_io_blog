@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation"
 
 const categories = [
   { label: "All categories", href: "/" },
+  { label: "Career", href: "/category/career" },
   { label: "Java", href: "/category/java" },
   { label: "Agile", href: "/category/agile" },
   { label: "Architecture", href: "/category/architecture" },
@@ -22,11 +23,10 @@ export function CategoryFilter() {
           <Link
             key={cat.href}
             href={cat.href}
-            className={`shrink-0 border-b-2 px-4 py-3 text-sm font-medium transition-colors ${
-              isActive
+            className={`shrink-0 border-b-2 px-4 py-3 text-sm font-medium transition-colors ${isActive
                 ? "border-primary text-primary"
                 : "border-transparent text-muted-foreground hover:border-border hover:text-foreground"
-            }`}
+              }`}
           >
             {cat.label}
           </Link>
