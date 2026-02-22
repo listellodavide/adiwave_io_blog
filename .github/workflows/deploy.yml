@@ -1,9 +1,10 @@
+# .github/workflows/deploy.yml
 name: Deploy Next.js to GitHub Pages
 
 on:
   push:
     branches:
-      - main
+      - main  # or your default branch
 
 permissions:
   contents: read
@@ -11,7 +12,7 @@ permissions:
   id-token: write
 
 jobs:
-  build:
+  build-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -27,8 +28,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build static export
-        run: npm run build
+      - name: Build static Next.js site
+        run: npm run build  # output: 'export' already in next.config.mjs
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -36,7 +37,7 @@ jobs:
       - name: Upload static files
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: ./out  # THIS MUST MATCH Next.js static output
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
