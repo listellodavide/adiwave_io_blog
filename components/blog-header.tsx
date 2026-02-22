@@ -40,7 +40,7 @@ export function BlogHeader() {
           ))}
           <div className="ml-3 h-5 w-px bg-border" />
           <a
-            href="https://github.com/adiwave"
+            href="https://listellodavide.github.io"
             target="_blank"
             rel="noopener noreferrer"
             className="ml-2 rounded-lg p-2 text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
@@ -74,7 +74,7 @@ export function BlogHeader() {
               </Link>
             ))}
             <a
-              href="https://github.com/adiwave"
+              href="https://listellodavide.github.io"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 rounded-lg px-4 py-2.5 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"

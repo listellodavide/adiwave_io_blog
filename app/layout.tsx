@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'Adiwave.IO — Software Development Blog',
   description: 'Insights on Java, Scrum, Kubernetes, microservices, and solution architecture. Practical engineering best practices from the field.',
   keywords: ['Java', 'Scrum', 'Kubernetes', 'Microservices', 'API Gateway', 'Kong', 'Solution Architecture', 'Software Engineering'],
-  authors: [{ name: 'Adi Castellanos' }],
+  authors: [{ name: 'Davide Listello', url: 'https://github.com/listellodavide/listellodavide.github.io' }],
   icons: {
     icon: [
       {
