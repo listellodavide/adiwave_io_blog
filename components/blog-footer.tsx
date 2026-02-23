@@ -32,10 +32,10 @@ export function BlogFooter() {
             <div>
               <Link href="/" className="flex items-center gap-2.5">
                 <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary">
-                  <span className="text-sm font-bold text-primary-foreground">A</span>
+                  <span className="text-sm font-bold text-primary-foreground">DL</span>
                 </div>
                 <span className="text-xl font-bold tracking-tight text-foreground">
-                  Adiwave<span className="text-primary">.IO</span>
+                  Davide Listello<span className="text-primary">&emsp;adiwave.io</span>
                 </span>
               </Link>
               <p className="mt-3 max-w-xs text-sm leading-relaxed text-muted-foreground">
@@ -79,7 +79,7 @@ export function BlogFooter() {
           </div>
 
           <div className="mt-10 border-t border-border pt-6 text-center text-xs text-muted-foreground">
-            {`\u00A9 ${new Date().getFullYear()} Adiwave.IO. All rights reserved. Built with Next.js + React on GitHub Pages.`}
+            {`\u00A9 ${new Date().getFullYear()} Davide Listello, adiwave.io - All rights reserved. Built with Next.js + React on GitHub Pages.`}
           </div>
         </div>
       </div>
