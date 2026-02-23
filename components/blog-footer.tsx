@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Github, ArrowRight } from "lucide-react"
+import { Github, ArrowRight, Linkedin, Mail } from "lucide-react"
 
 export function BlogFooter() {
   return (
@@ -74,12 +74,28 @@ export function BlogFooter() {
                   <Github className="h-4 w-4" />
                   GitHub
                 </a>
+                <a
+                  href="https://www.linkedin.com/in/davide-listello-701aaba/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-primary"
+                >
+                  <Linkedin className="h-4 w-4" />
+                  LinkedIn
+                </a>
+                <a
+                  href="mailto:davide.listello@gmail.com"
+                  className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-primary"
+                >
+                  <Mail className="h-4 w-4" />
+                  Email
+                </a>
               </div>
             </div>
           </div>
 
           <div className="mt-10 border-t border-border pt-6 text-center text-xs text-muted-foreground">
-            {`\u00A9 ${new Date().getFullYear()} Davide Listello, adiwave.io - All rights reserved. Built with Next.js + React on GitHub Pages.`}
+            {`\u00A9 ${new Date().getFullYear()} Davide Listello, adiwave.io - All rights reserved. Personal blog, cv/resume, and portfolio. Built with React and deployed as GitHub Pages.`}
           </div>
         </div>
       </div>

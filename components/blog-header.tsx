@@ -46,7 +46,7 @@ export function BlogHeader() {
           ))}
           <div className="ml-3 h-5 w-px bg-border" />
           <a
-            href="https://listellodavide.github.io"
+            href="https://github.com/listellodavide/"
             target="_blank"
             rel="noopener noreferrer"
             className="ml-2 rounded-lg p-2 text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
