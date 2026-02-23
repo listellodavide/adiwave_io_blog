@@ -22,11 +22,16 @@ export function BlogHeader() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
         <Link href="/" className="flex items-center gap-2.5">
           <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary">
-            <span className="text-sm font-bold text-primary-foreground">A</span>
+            <span className="text-sm font-bold text-primary-foreground">DL</span>
           </div>
-          <span className="text-xl font-bold tracking-tight text-foreground">
-            Adiwave<span className="text-primary">.IO</span>
-          </span>
+          <div className="flex flex-col">
+            <span className="text-xl font-bold tracking-tight text-foreground leading-none">
+              Davide Listello<span className="text-primary font-mono text-sm">&emsp;adiwave.io</span>
+            </span>
+            <span className="mt-1 text-[10px] italic text-muted-foreground leading-tight hidden sm:block">
+              Best practice in software programming and critical thinking, always try to build something you didn't think you could!
+            </span>
+          </div>
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex">
