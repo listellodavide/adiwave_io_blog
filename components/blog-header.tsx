@@ -7,8 +7,9 @@ import { ThemeToggle } from "@/components/theme-toggle"
 
 const navLinks = [
   { label: "Home", href: "/" },
+  { label: "Projects", href: "/projects" },
+  { label: "CV/Experience", href: "/experience" },
   { label: "Java", href: "/category/java" },
-  { label: "Agile", href: "/category/agile" },
   { label: "Architecture", href: "/category/architecture" },
   { label: "Cloud", href: "/category/cloud" },
 ]
@@ -74,7 +75,7 @@ export function BlogHeader() {
               </Link>
             ))}
             <a
-              href="https://listellodavide.github.io"
+              href="https://github.com/listellodavide/listellodavide.github.io"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 rounded-lg px-4 py-2.5 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
