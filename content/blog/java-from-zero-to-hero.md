@@ -19,7 +19,10 @@ readTime: "From zero to hero in Java"
 
 If I had to start all over again and pick a programming language. Will be again Java, it's simple, it's verbose but let you understand what you are doing in a obvious way.
 It's very easy to pick up and learning when coming from other languages like C/C++ or Python/Ruby/Scala/Kotlin.
-It use OOP and Functional programming so everybody feel at home right from the first hello world.02
+Java can be written following both OOP paradigm and Functional programming (like in Java Streams for collections or WebFlux Project Reactor).
+I would say Java is like the English of programming, everybody can immediately feel at home right from day one and first 'Hello World' to many years later when writing complex modules in huge microservice projects.
+And like English you never finish to learn new words new idiomatic expression, new best practice, what worked before might not work tomorrow and therefor there is space for refactoring and modernize code base written in Java 8 to Java 25.
+
 
 ## Data Types
 Java has both Primitive Types like boolean, char, byte, short, int, long, float or double that Non-Primitive types.
