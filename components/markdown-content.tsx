@@ -4,12 +4,20 @@ interface MarkdownContentProps {
 
 function parseMarkdownLine(line: string): string {
   let result = line
+
+  // Center alignment: Looks for <center>content</center>
+  result = result.replace(
+      /<center>(.*?)<\/center>/g,
+      '<span style="display: block; text-align: center; margin: 1.5rem 0; width: 100%;">$1</span>'
+  )
+
   // Bold
   result = result.replace(/\*\*(.*?)\*\*/g, "<strong class='font-semibold text-foreground'>$1</strong>")
   // Italic
   result = result.replace(/\*(.*?)\*/g, "<em>$1</em>")
   // Inline code
   result = result.replace(/`([^`]+)`/g, '<code class="inline-code">$1</code>')
+
   return result
 }
 
